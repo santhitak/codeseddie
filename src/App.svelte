@@ -4,16 +4,10 @@
 </script>
 
 <main>
-  <h1>Hello Typescript!</h1>
-
   <Counter />
 </main>
 
 <style>
-
-  :root {
-    font-family: 'SQ Market', sans-serif;
-  }
 
   main {
     text-align: center;
