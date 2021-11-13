@@ -1,9 +1,13 @@
 <script lang="ts">
   import Home from "@layouts/Home.svelte";
+  import Showcase from "@layouts/Showcase.svelte";
+  import Footer from "@layouts/Footer.svelte";
 </script>
 
 <main>
   <Home />
+  <Showcase />
+  <Footer />
 </main>
 
 <style>
@@ -12,15 +16,6 @@
     --navy: #30475e;
     --red: #f05454;
     --gray: #dddddd;
-  }
-  :global(body) {
-    background-color: #f0f0f0;
-    color: var(--dark);
-    transition: background-color 0.3s;
-  }
-  :global(body.dark-mode) {
-    background-color: var(--dark);
-    color: var(--gray);
   }
 
   @font-face {
@@ -105,5 +100,33 @@
   main {
     font-family: "SQ Market", sans-serif;
     overflow-x: hidden;
+  }
+
+  :global(body) {
+    background-color: #f0f0f0;
+    color: var(--dark);
+    transition: background-color 0.3s;
+  }
+  :global(body.dark-mode) {
+    background-color: var(--dark);
+    color: var(--gray);
+  }
+  :global(section){
+    width: 100vw;
+    height: 100vh;
+  }
+  :global(.container){
+    height: 75vh;
+    width: 60vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  :global(.wrapper){
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 </style>
