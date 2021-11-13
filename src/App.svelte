@@ -2,9 +2,11 @@
   import Home from "@layouts/Home.svelte";
   import Showcase from "@layouts/Showcase.svelte";
   import Footer from "@layouts/Footer.svelte";
+  import ScrollTop from "lib/base/ScrollTop.svelte";
 </script>
 
 <main>
+  <ScrollTop />
   <Home />
   <Showcase />
   <Footer />
@@ -111,20 +113,20 @@
     background-color: var(--dark);
     color: var(--gray);
   }
-  :global(section){
+  :global(section) {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
   }
-  :global(.container){
+  :global(.container) {
     height: 75vh;
     width: 60vw;
     align-items: center;
     display: flex;
     justify-content: center;
   }
-  :global(.wrapper){
+  :global(.wrapper) {
     height: 100%;
     width: 100%;
     align-items: center;
