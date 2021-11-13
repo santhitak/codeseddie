@@ -2,10 +2,16 @@
   function toggle() {
     window.document.body.classList.toggle("dark-mode");
   }
+  let visible;
 </script>
 
 <label class="switch">
-  <input type="checkbox" on:click={toggle} />
+  {#if visible}
+	  <p> dark mode</p>
+    {:else}
+    <p>light mode</p>
+  {/if}
+  <input type="checkbox" bind:checked={visible} on:click={toggle} />
   <div>
     <span />
   </div>
@@ -22,8 +28,9 @@
   .switch {
     cursor: pointer;
     position: fixed;
-    top: 3rem;
+    top: 2rem;
     right: 3rem;
+    transform: scale(.7);
   }
   .switch input {
     display: none;
