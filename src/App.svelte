@@ -104,5 +104,6 @@
   }
   main {
     font-family: "SQ Market", sans-serif;
+    overflow-x: hidden;
   }
 </style>
