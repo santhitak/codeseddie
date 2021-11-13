@@ -16,6 +16,12 @@
     margin: 0;
     padding: 0;
   }
+  i{
+    transition: .2s linear;
+  }
+  i:hover {
+    margin-left: 1.5rem;
+  }
   .wrapper {
     width: auto;
     height: auto;
