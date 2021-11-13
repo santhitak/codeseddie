@@ -1,12 +1,10 @@
 <script lang="ts">
-  import './lib/css/fontface.css';
-  import Nav from './lib/base/nav.svelte';
+  import Layout from './lib/Layout/Layout.svelte';
 </script>
 
-
-<body>
-  <Nav />
-</body>
+<main>
+  <Layout />
+</main>
 
 <style>
   @font-face {
@@ -88,13 +86,7 @@
       format("svg");
   font-weight: 600;
 }
-  *{
+  main{
     font-family: 'SQ Market', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    width: 100vw;
   }
 </style>
