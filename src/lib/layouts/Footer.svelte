@@ -10,6 +10,7 @@
 <style>
   p {
     font-size: 0.8rem;
+    user-select: none;
   }
   .footer {
     height: 20vh;
@@ -26,6 +27,17 @@
       display: flex;
       flex-direction: column;
       text-align: center;
+    }
+    .footer {
+      height: 15vh;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    p{
+      font-size: 1rem;
+    }
+    .footer {
+      height: 10vh;
     }
   }
 </style>
