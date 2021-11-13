@@ -16,8 +16,8 @@
     margin: 0;
     padding: 0;
   }
-  i{
-    transition: .2s linear;
+  i {
+    transition: 0.2s linear;
   }
   i:hover {
     margin-left: 1.5rem;
@@ -29,5 +29,24 @@
     display: inline-block;
     inline-size: auto;
     top: 35px;
+  }
+  @media only screen and (max-width: 812px) {
+    .wrapper {
+      top: 0px;
+    }
+    i {
+      font-size: 25px;
+    }
+    i:hover {
+      margin-left: 0.8rem;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .wrapper {
+      top: 22px;
+    }
+    i:hover {
+      margin-left: 0.8rem;
+    }
   }
 </style>

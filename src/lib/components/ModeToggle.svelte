@@ -7,8 +7,8 @@
 
 <label class="switch">
   {#if visible}
-	  <p> dark mode</p>
-    {:else}
+    <p>dark mode</p>
+  {:else}
     <p>light mode</p>
   {/if}
   <input type="checkbox" bind:checked={visible} on:click={toggle} />
@@ -28,9 +28,9 @@
   .switch {
     cursor: pointer;
     position: fixed;
-    top: 2rem;
+    top: 1.2rem;
     right: 3rem;
-    transform: scale(.7);
+    transform: scale(0.7);
   }
   .switch input {
     display: none;
@@ -97,5 +97,15 @@
   }
   :global(body.dark-mode) .switch input:checked + div span:before {
     --b: var(--gray);
+  }
+  @media only screen and (max-width: 812px) {
+    .switch {
+      position: absolute;
+      top: 1.2rem;
+      right: 1rem;
+    }
+    p {
+      display: none;
+    }
   }
 </style>

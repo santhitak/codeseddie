@@ -20,4 +20,12 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  @media only screen and (max-width: 812px) {
+    .listWrap {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
 </style>

@@ -11,10 +11,16 @@
   :global(body.dark-mode) a {
     color: var(--gray);
   }
-  .Wrapper{
+  .Wrapper {
     position: fixed;
     top: 2.5rem;
     left: 3rem;
   }
-
+  @media only screen and (max-width: 812px) {
+    .Wrapper {
+      top: 1.2rem;
+      left: 1.6rem;
+      position: absolute;
+    }
+  }
 </style>
