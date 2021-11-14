@@ -55,8 +55,5 @@
       bottom: 1.2rem;
       right: 1.2rem;
     }
-    p {
-      display: none;
-    }
   }
 </style>
