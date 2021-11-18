@@ -34,7 +34,7 @@
 <style>
   .back-to-top {
     opacity: 1;
-ะั    transition: opacity .5s, visibility .8s;
+    transition: opacity .5s, visibility .8s;
     position: fixed;
     right: 5rem;
     bottom: 4rem;
