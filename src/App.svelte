@@ -18,6 +18,7 @@
     --navy: #30475e;
     --red: #f05454;
     --gray: #dddddd;
+    --light: #f0f0f0;
   }
 
   @font-face {
@@ -105,7 +106,7 @@
   }
 
   :global(body) {
-    background-color: #f0f0f0;
+    background-color: var(--light);
     color: var(--dark);
     transition: background-color 0.3s;
   }
