@@ -9,7 +9,7 @@
   <ModeToggle />
   <div class="wrapper">
     <div class="container">
-      <h1>ten days<br />of code<NextButton /></h1>
+      <h1>(not) ten days<br />of code<NextButton /></h1>
     </div>
   </div>
 </section>
